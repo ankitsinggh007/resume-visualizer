@@ -1,10 +1,7 @@
-import { Routes, Route } from "react-router-dom";
+import ParserDebug from "./__debug__/ParserDebug";
 
-export default function App() {
-  return (
-      <Routes>
-        <Route path="/" element={<div>Home</div>} />
-        <Route path="*" element={<div>404 – Not Found</div>} />
-      </Routes>
-  );
+function App() {
+  return <ParserDebug />;
 }
+
+export default App;
