@@ -1,7 +1,7 @@
-import { extractSkillsFromResume } from "@/api/analyzeSkill.jsx";
+import { extractSkillsMock } from "@/api/analyzeSkill.jsx";
 
 async function test() {
-  const res = await extractSkillsFromResume(
+  const res = await extractSkillsMock(
     "Ankit has 2 years of React experience..."
   );
   console.log(res);

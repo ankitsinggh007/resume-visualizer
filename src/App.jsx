@@ -1,11 +1,14 @@
 import ParserDebug from "./__debug__/ParserDebug";
-import Test from "./__debug__/ExtractionDebug";
-import { AnalyzeProvider } from "./context/AnalyzeContext";
+
+import WizardPage from "./pages/WizardPage";
+
+// import Test from "./__debug__/ExtractionDebug";
 function App() {
   return (
-    <AnalyzeProvider>
-      <App />
-    </AnalyzeProvider>
+    <div>
+      <WizardPage />
+      <ParserDebug />
+    </div>
   );
 }
 

@@ -94,7 +94,7 @@ export function useResumeParser() {
           setText(fullText);
 
           setText(fullText);
-          return;
+          return fullText;
         } catch (err) {
           console.error(err);
           setError("Failed to parse PDF. File may be corrupted.");
@@ -127,7 +127,7 @@ export function useResumeParser() {
           setText(fullText);
 
           setText(fullText);
-          return;
+          return fullText;
         } catch (err) {
           console.error(err);
           setError("Failed to parse DOCX. File may be corrupted.");
