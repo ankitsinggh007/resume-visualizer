@@ -1,0 +1,71 @@
+{
+  "role": "React Developer",
+  "companyType": "unicorn",
+  "level": "junior",
+
+  "categories": [
+    {
+      "name": "JavaScript Fundamentals",
+      "weight": 0.25,
+      "skills": [
+        { "name": "Variables & Scope", "weight": 0.06 },
+        { "name": "Closures", "weight": 0.12 },
+        { "name": "Async/Await & Promises", "weight": 0.18 },
+        { "name": "Event Loop", "weight": 0.15 },
+        { "name": "Hoisting", "weight": 0.05 },
+        { "name": "Prototypes", "weight": 0.13 },
+        { "name": "Array & Object APIs", "weight": 0.1 },
+        { "name": "Error Handling", "weight": 0.06 }
+      ]
+    },
+
+    {
+      "name": "React Core",
+      "weight": 0.35,
+      "skills": [
+        { "name": "JSX", "weight": 0.05 },
+        { "name": "Props", "weight": 0.05 },
+        { "name": "State", "weight": 0.1 },
+        { "name": "Hooks", "weight": 0.2 },
+        { "name": "Context API", "weight": 0.1 },
+        { "name": "Lifecycle Understanding", "weight": 0.1 },
+        { "name": "Conditional Rendering", "weight": 0.05 },
+        { "name": "Forms & Validation", "weight": 0.1 },
+        { "name": "Lists & Keys", "weight": 0.05 },
+        { "name": "Error Boundaries", "weight": 0.05 }
+      ]
+    },
+
+    {
+      "name": "React Ecosystem",
+      "weight": 0.2,
+      "skills": [
+        { "name": "React Router", "weight": 0.2 },
+        { "name": "Redux/RTK", "weight": 0.4 },
+        { "name": "State Management Patterns", "weight": 0.2 },
+        { "name": "Query Libraries (React Query)", "weight": 0.2 }
+      ]
+    },
+
+    {
+      "name": "Tooling & Build",
+      "weight": 0.1,
+      "skills": [
+        { "name": "Vite/Webpack Basics", "weight": 0.25 },
+        { "name": "ESLint/Prettier", "weight": 0.25 },
+        { "name": "Package Managers", "weight": 0.1 },
+        { "name": "Git & Branching", "weight": 0.4 }
+      ]
+    },
+
+    {
+      "name": "Soft Skills",
+      "weight": 0.1,
+      "skills": [
+        { "name": "Communication", "weight": 0.4 },
+        { "name": "Team Collaboration", "weight": 0.3 },
+        { "name": "Problem Breakdown", "weight": 0.3 }
+      ]
+    }
+  ]
+}
