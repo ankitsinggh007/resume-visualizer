@@ -9,6 +9,12 @@ export function AnalyzeProvider({ children }) {
   const [extractionResult, setExtractionResult] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
+  // NEW: role:level:comapnyType for benchmark
+
+  const [selectedRole, setSelectedRole] = useState(null);
+  const [selectedLevel, setSelectedLevel] = useState(null);
+  const [selectedCompanyType, setSelectedCompanyType] = useState(null);
+
   // NEW: editable skill lists
   const [extractedSkills, setExtractedSkills] = useState([]);
   const [inferredSkills, setInferredSkills] = useState([]);
@@ -37,14 +43,10 @@ export function AnalyzeProvider({ children }) {
   // -----------------------------
   function removeSkill(skillName) {
     // remove from extracted
-    setExtractedSkills((prev) =>
-      prev.filter((s) => s.skill !== skillName)
-    );
+    setExtractedSkills((prev) => prev.filter((s) => s.skill !== skillName));
 
     // remove from inferred
-    setInferredSkills((prev) =>
-      prev.filter((s) => s.skill !== skillName)
-    );
+    setInferredSkills((prev) => prev.filter((s) => s.skill !== skillName));
 
     // add to deleted
     setDeletedSkills((prev) => [...prev, skillName]);
@@ -81,7 +83,12 @@ export function AnalyzeProvider({ children }) {
         runExtraction,
         currentStep,
         setCurrentStep,
-
+        selectedRole,
+        setSelectedRole,
+        selectedLevel,
+        setSelectedLevel,
+        selectedCompanyType,
+        setSelectedCompanyType,
         // skill editing
         extractedSkills,
         inferredSkills,
